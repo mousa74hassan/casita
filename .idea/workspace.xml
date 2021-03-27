@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e60a7245-d264-4ded-a3f3-2da274ec8e14" name="Default Changelist" comment="sentiments">
-      <change afterPath="$PROJECT_DIR$/app/Http/Helpers/helper.php" afterDir="false" />
+    <list default="true" id="e60a7245-d264-4ded-a3f3-2da274ec8e14" name="Default Changelist" comment="finished">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/project/google-map.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/project/google-map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/project/map.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +169,7 @@
       <workItem from="1616767762972" duration="5656000" />
       <workItem from="1616849182251" duration="13564000" />
       <workItem from="1616872356348" duration="7777000" />
-      <workItem from="1616881834399" duration="5434000" />
+      <workItem from="1616881834399" duration="6039000" />
     </task>
     <task id="LOCAL-00001" summary="sentiments">
       <created>1616875260394</created>
@@ -186,7 +178,21 @@
       <option name="project" value="LOCAL" />
       <updated>1616875260394</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="finish">
+      <created>1616888551995</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1616888551995</updated>
+    </task>
+    <task id="LOCAL-00003" summary="finished">
+      <created>1616888829957</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1616888829957</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +212,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="sentiments" />
-    <option name="LAST_COMMIT_MESSAGE" value="sentiments" />
+    <MESSAGE value="finish" />
+    <MESSAGE value="finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished" />
   </component>
 </project>

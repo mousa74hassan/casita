@@ -47,7 +47,11 @@ loader.load().then(() => {
             for(let i=0; i<locations.length; i++){
                 locations[i].setMap(null);
             }
-            axios.get('/get-locations/'+el.text).then(res => {
+
+            let type = el.text;
+            if (type == 'All') type = '';
+
+            axios.get('/get-locations/'+type).then(res => {
                 let label = '';
                 res.data.map(location => {
                     if (location.sentiment == 'Positive') label = 'P';
@@ -67,7 +71,7 @@ loader.load().then(() => {
                     locations.push(marker);
                     return marker
                 })
-                console.log('sss', el.text, res.data)
+
             }).catch(error => console.log('error', error));
         })
     });

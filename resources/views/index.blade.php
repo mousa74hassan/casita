@@ -48,6 +48,7 @@
         @foreach($sentiments as $sentiment)
             <li><a class="sentiment">{{ $sentiment }}</a></li>
         @endforeach
+            <li><a class="sentiment">All</a></li>
     </ul></p>
 </div>
 

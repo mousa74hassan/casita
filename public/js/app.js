@@ -2227,7 +2227,9 @@ loader.load().then(function () {
         locations[i].setMap(null);
       }
 
-      axios.get('/get-locations/' + el.text).then(function (res) {
+      var type = el.text;
+      if (type == 'All') type = '';
+      axios.get('/get-locations/' + type).then(function (res) {
         var label = '';
         res.data.map(function (location) {
           if (location.sentiment == 'Positive') label = 'P';else if (location.sentiment == 'Negative') label = 'Ng';else label = 'Ne';
@@ -2245,7 +2247,6 @@ loader.load().then(function () {
           locations.push(marker);
           return marker;
         });
-        console.log('sss', el.text, res.data);
       })["catch"](function (error) {
         return console.log('error', error);
       });
