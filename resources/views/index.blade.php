@@ -14,7 +14,7 @@
             padding: 0;
         }
         #map {
-            height: 70%;
+            height: 80%;
         }
         #header {
             height: 20%;

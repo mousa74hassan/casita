@@ -11,7 +11,7 @@ let map;
 
 loader.load().then(() => {
 
-    let lat_lng = { lat: 31.0698036, lng: 31.5027398 };
+    let lat_lng = { lat: 29.6729232, lng: 30.542993 };
 
     map = new google.maps.Map(document.getElementById("map"), {
         center: lat_lng,

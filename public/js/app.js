@@ -2140,8 +2140,6 @@ module.exports = {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-__webpack_require__(Object(function webpackMissingModule() { var e = new Error("Cannot find module './project/locations'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-
 __webpack_require__(/*! ./project/google-map */ "./resources/js/project/google-map.js");
 
 /***/ }),
@@ -2194,8 +2192,8 @@ var loader = new _googlemaps_js_api_loader__WEBPACK_IMPORTED_MODULE_0__.Loader({
 var map;
 loader.load().then(function () {
   var lat_lng = {
-    lat: 31.0698036,
-    lng: 31.5027398
+    lat: 29.6729232,
+    lng: 30.542993
   };
   map = new google.maps.Map(document.getElementById("map"), {
     center: lat_lng,
