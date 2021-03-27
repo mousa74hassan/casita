@@ -10,7 +10,9 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return view('index');
+        $messages = $this->getData();
+        $sentiments = array_unique($messages->pluck('sentiment')->toArray());
+        return view('index', compact('sentiments'));
     }
 
     public function getData()

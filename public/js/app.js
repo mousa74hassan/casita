@@ -2214,8 +2214,8 @@ var geocoder;
 var infowindow;
 loader.load().then(function () {
   var lat_lng = {
-    lat: 41.291468,
-    lng: 22.0119568
+    lat: 31.0698036,
+    lng: 31.5027398
   };
   map = new google.maps.Map(document.getElementById("map"), {
     center: lat_lng,

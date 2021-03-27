@@ -7,23 +7,42 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Task</title>
     <style>
-        #map {
-            height: 100%;
-        }
+
         html, body {
             height: 100%;
             margin: 0;
             padding: 0;
         }
+        #map {
+            height: 70%;
+        }
+        #header {
+            height: 20%;
+         }
+        #header ul, b {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+        #header li {
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
 
-<div id="map">
+<div id="header">
+    <p><b>Sentiments:</b> <ul>
+        @foreach($sentiments as $sentiment)
+            <li><a class="sentiment">{{ $sentiment }}</a></li>
+        @endforeach
+    </ul></p>
+    <p id="results"></p>
+</div>
 
+<div id="map">
 </div>
 
 <script src="/js/app.js"></script>
-{{--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsT140mx0UuES7ZwcfY28HuTUrTnDhxww&callback=initMap"></script>--}}
 </body>
 </html>
