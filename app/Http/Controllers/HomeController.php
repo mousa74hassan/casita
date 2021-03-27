@@ -64,4 +64,27 @@ class HomeController extends Controller
         return response()->json(['status' => true,'data' => $city]);
     }
 
+    public function getLocations($type = '')
+    {
+        $messages = $this->getData();
+        $results = [];
+        if (Cache::has('locations')) {
+            $results = Cache::get('locations');
+        } else {
+            $messages->each(function ($res) use (&$results) {
+                $results[] = ['location' => getLatLng($res['message']), 'message' => $res['message'], 'sentiment' => $res['sentiment']];
+            });
+            $results = Cache::remember('locations', 3600, function () use ($results) {
+                return $results;
+            });
+        }
+
+        if ($type) {
+            $results = collect($results)->where('sentiment', $type)->values();
+        }
+
+
+        return response()->json($results);
+    }
+
 }

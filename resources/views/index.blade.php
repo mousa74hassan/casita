@@ -27,6 +27,18 @@
         #header li {
             padding: 10px;
         }
+        #header a {
+            background-color: white;
+            color: black;
+            border: 2px solid #4CAF50;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-left: 20px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -37,7 +49,6 @@
             <li><a class="sentiment">{{ $sentiment }}</a></li>
         @endforeach
     </ul></p>
-    <p id="results"></p>
 </div>
 
 <div id="map">
