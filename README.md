@@ -8,8 +8,9 @@ Run the following commands:
 ```
 composer install
 cp .env.example .env
-npm install
 php artisan key:generate
+npm install
+npm run dev
 php artisan serve
 ```
 
