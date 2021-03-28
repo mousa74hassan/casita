@@ -12,7 +12,7 @@ class HomeController extends Controller
     {
         $messages = $this->getData();
         $sentiments = array_unique($messages->pluck('sentiment')->toArray());
-        return view('index', compact('sentiments'));
+        return view('index', compact('sentiments', 'messages'));
     }
 
     public function getData()
