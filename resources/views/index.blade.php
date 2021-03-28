@@ -6,62 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Task</title>
-    <style>
-
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        #map {
-            height: 80%;
-        }
-        #header {
-            height: 20%;
-         }
-        #header ul, b {
-            display: flex;
-            justify-content: center;
-            list-style-type: none;
-        }
-        #header li {
-            padding: 10px;
-        }
-        #header a {
-            background-color: white;
-            color: black;
-            border: 2px solid #4CAF50;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin-left: 20px;
-            cursor: pointer;
-        }
-        #customers {
-            font-family: Arial, Helvetica, sans-serif;
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        #customers td, #customers th {
-            border: 1px solid #ddd;
-            padding: 8px;
-        }
-
-        #customers tr:nth-child(even){background-color: #f2f2f2;}
-
-        #customers tr:hover {background-color: #ddd;}
-
-        #customers th {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            text-align: left;
-            background-color: #4CAF50;
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
 
